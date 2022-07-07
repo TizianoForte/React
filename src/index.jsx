@@ -1,24 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+const sum = (a,b)=> a+b;
 
-function sayHello (user){
-  return `${user.firstName} ${user.lastName}!`
-};
-
-
-
-const user = {
-  firstName: 'Tiziano',
-  lastName: 'Forte',
-};
-
-const hello = <h1>Hello, {sayHello(user)}</h1>;
+const result = <h1>The result is: {sum(33,36)}</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {hello}
+    {result}
   </React.StrictMode>
 );
 
